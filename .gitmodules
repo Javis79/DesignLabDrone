@@ -1,0 +1,3 @@
+[submodule "controll/Quadrocopter"]
+	path = controll/Quadrocopter
+	url = https://github.com/ardysk/Quadrocopter.git
