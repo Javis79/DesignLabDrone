@@ -20,6 +20,7 @@ This project focuses on developing a lightweight micro-drone controlled by a Ras
 - **Sensors**:
   - MPU6050 (accelerometer + gyroscope).
   - Ultrasonic distance sensor for safe landing.
+  
 
 ### Software
 - **Languages**: Python
@@ -49,7 +50,13 @@ Flight time = ~3 min
 
 ---
 
-## Circuit Connections
+## Connection schematic
+View of connections below:
+
+<p align="center">
+  <img src="photos/schematic.png" alt="Drone Schematic" width="500">
+</p>
+
 | Component                  | Raspberry Pi Pin |
 |----------------------------|------------------|
 | Motor 1 (CW)               | GPIO23 (Pin 16)  |
