@@ -109,8 +109,8 @@ View of connections below:
 - Power the Raspberry Pi and Sensors
 - Use the 2S LiPo battery with the LD1117 regulator to supply 5V to the Pi.
 - Connect the 1S LiPo battery to power the motors.
-  <p align="center"> <img src="photos/drone_bottom.jpg" alt="Drone Underside" width="400"> </p>
-  <p align="center"> <img src="photos/drone_top.jpg" alt="Drone Upside" width="400"> </p>
+  <p align="center"> <img src="photos/side_view.jpg" alt="Drone sideview" width="400"> </p>
+  <p align="center"> <img src="photos/top_view.jpg" alt="Drone Top" width="400"> </p>
   
 3. Power the Raspberry Pi and sensors using the LiPo battery.
 4. Start the server on the Raspberry Pi
