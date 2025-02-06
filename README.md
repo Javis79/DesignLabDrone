@@ -25,22 +25,23 @@ This project focuses on developing a lightweight micro-drone controlled by a Ras
 ### Software
 - **Languages**: Python
 - **Key Modules**:
-  - `client.py`: Sends control commands to the drone via WiFi, handles keyboard inputs.
-  - `server.py`: Receives commands on the Raspberry Pi and routes them to motor controllers.
-  - `fly_controll.py`: Implements flight stabilization by analyzing MPU6050 data and adjusting motor speeds.
-  - `start_stop.py`: Manages take-off and landing using the ultrasonic sensor.
-  - `gui.py`: Provides a graphical interface for controlling the drone, including connection status and directional buttons.
+- `client.py`: Sends control commands to the drone via WiFi, handles keyboard inputs.
+- `server.py`: Receives commands on the Raspberry Pi and routes them to motor controllers.
+- `fly_controll.py`: Implements flight stabilization by analyzing MPU6050 data and adjusting motor speeds.
+- `start_stop.py`: Manages take-off and landing using the ultrasonic sensor.
+- `gui.py`: Provides a graphical interface for controlling the drone, including connection status and directional buttons.
+
 
 ---
 
 ## Technical Specifications
 ### Power Calculation
 - **Battery**: 600mAh, 3.7V, 30C (18A max discharge).
-- **Estimated Flight Time**:
+- **Estimated ON Time**:
  ```
-Flight time = ~3 min
+ON time = ~3 min
 ```
-- **Drone Weight**: 80g, with sufficient thrust for stable flight using 4 motors.
+- **Drone Weight**: 107g, with sufficient thrust for stable flight using 4 motors.
 
 ### Motor Speed Control
 - **PWM (Pulse Width Modulation)**: 
@@ -99,17 +100,34 @@ View of connections below:
  git clone https://github.com/your-repo/micro-drone.git
  cd micro-drone
 ```
-2. Power the Raspberry Pi and sensors using the LiPo battery.
-3. Start the server on the Raspberry Pi
+2. Assemble the Drone
+
+- Connect all components on the breadboard as shown on the display/schematic.
+- Mount everything onto the 3D-printed frame.
+- Attach the propellers to the motors.
+- Ensure the LiPo batteries are connected correctly (one for motors, one regulated for the Raspberry Pi).
+- Power the Raspberry Pi and Sensors
+- Use the 2S LiPo battery with the LD1117 regulator to supply 5V to the Pi.
+- Connect the 1S LiPo battery to power the motors.
+  <p align="center"> <img src="photos/drone_bottom.jpg" alt="Drone Underside" width="400"> </p>
+  <p align="center"> <img src="photos/drone_top.jpg" alt="Drone Upside" width="400"> </p>
+  
+3. Power the Raspberry Pi and sensors using the LiPo battery.
+4. Start the server on the Raspberry Pi
    ```bash
    python3 server.py
    ```
-4. Launch the client application on your laptop:
+5. Launch the client application on your laptop:
    ```bash
    python3 client.py
    ```
-5. Use the GUI or keyboard to control the drone.
-6. 
+6. Use the GUI or keyboard to control the drone.
+7.If needed, run or import:
+
+    dane.py for sensor data reading.
+    kontrola.py for tilt management and motor corrections.
+    akce_zyro.py for direct accelerometer and gyroscope handling.
+ 
 ### Future Work
 
 - Optimize power efficiency to extend flight time.
