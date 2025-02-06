@@ -65,8 +65,8 @@ View of connections below:
 | Motor 4 (CCW)              | GPIO13 (Pin 33)  |
 | MPU6050 SDA                | GPIO2 (Pin 3)    |
 | MPU6050 SCL                | GPIO3 (Pin 5)    |
-| Ultrasonic Sensor TRIG     | GPIO5 (Pin 29)   |
-| Ultrasonic Sensor ECHO     | GPIO6 (Pin 31)   |
+| Ultrasonic Sensor TRIG     | GPIO2 (Pin 3)    |
+| Ultrasonic Sensor ECHO     | GPIO3 (Pin 5)    |
 | Power to Motors (+)        | Pin 4 (5V)       |
 | Power to Motors (-)        | Pin 6 (GND)      |
 | Power to MPU6050 (+)       | Pin 1 (3.3V)     |
