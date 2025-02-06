@@ -27,10 +27,9 @@ This project focuses on developing a lightweight micro-drone controlled by a Ras
 - **Key Modules**:
 - `client.py`: Sends control commands to the drone via WiFi, handles keyboard inputs.
 - `server.py`: Receives commands on the Raspberry Pi and routes them to motor controllers.
-- `fly_controll.py`: Implements flight stabilization by analyzing MPU6050 data and adjusting motor speeds.
-- `start_stop.py`: Manages take-off and landing using the ultrasonic sensor.
-- `gui.py`: Provides a graphical interface for controlling the drone, including connection status and directional buttons.
-
+- `dane.py`: Reads sensor data collectively (e.g., from the accelerometer, gyroscope, or other modules).
+- `kontrola.py`: Monitors the drone’s tilt and activates the appropriate motors to correct orientation.
+- `akce_zyro.py`: Handles direct readings from the accelerometer and gyroscope to support flight stabilization.
 
 ---
 
