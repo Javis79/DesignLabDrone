@@ -138,4 +138,4 @@ View of connections below:
 - Arkadiusz Kowalczyk
 - Krystian Bajerski
 
-Project supervised by **Dr. Eng. Agnieszka Dąbrowska-Boruch**
+Project supervised by **PhD Agnieszka Dąbrowska-Boruch**
